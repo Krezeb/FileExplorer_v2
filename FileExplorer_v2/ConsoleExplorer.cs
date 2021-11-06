@@ -109,7 +109,6 @@ namespace FileExplorer_v2
                         return;
                     }
             }
-
         }
 
         public void AddToIndex() //Increses Index and moves selector DOWN (Pressing DOWN)
@@ -161,7 +160,8 @@ namespace FileExplorer_v2
                             Console.WriteLine(line);
                         }
                     }
-                    Console.WriteLine("\nPress any key to return to Folder View...");
+                    Console.WriteLine($"\n{DataStore.BreakLine}\n");
+                    Console.WriteLine("Press any key to return to Folder View...");
                     Console.ReadKey();
                     break;
                 }

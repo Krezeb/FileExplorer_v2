@@ -19,7 +19,7 @@ namespace FileExplorer_v2
             {
                 DataStore.PrintListPosition = 0;
                 Console.WriteLine($"No Entries found...");
-                Console.WriteLine($"{DataStore.BreakLine}\n");
+                Console.WriteLine($"\n{DataStore.BreakLine}\n");
                 return;
             }
             for (int i = 0; i < DataStore.DirEntryList.Length; i++)
@@ -38,7 +38,6 @@ namespace FileExplorer_v2
                         DataStore.SelectedDirPath = "";
                         DataStore.SelectedFileName = fi.Name;
                         DataStore.SelectedFilePath = fi.FullName;
-
                     }
                     else if (di.Exists)
                     {
@@ -47,7 +46,6 @@ namespace FileExplorer_v2
                         DataStore.SelectedDirPath = di.FullName;
                         DataStore.SelectedFileName = "";
                         DataStore.SelectedFilePath = "";
-
                     }
                     Console.ResetColor();
                 }
@@ -59,7 +57,7 @@ namespace FileExplorer_v2
                         Console.WriteLine($"## {di.Name}");
                 }
             }
-            Console.WriteLine($"{DataStore.BreakLine}\n");
+            Console.WriteLine($"\n{DataStore.BreakLine}\n");
         }
 
         public void CreateFile()
